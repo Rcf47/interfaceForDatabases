@@ -1,0 +1,12 @@
+name: Demo Workflow
+on: workflow_dispatch
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print to console
+        run: echo Hello from demo workflow!
+      - name: Print a few lines in console
+        run: |
+          echo First line!
+          echo Second line!
